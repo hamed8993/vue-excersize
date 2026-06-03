@@ -10,6 +10,7 @@ definePageMeta({
 <template>
   <div>
     <h3>about us page</h3>
+    <IconsLoadingIcon />
     <Header />
     <DefaultButton />
     <InputsAdminSwitchButton />
