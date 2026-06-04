@@ -1,6 +1,22 @@
-<template>
-  index page!!
+<script setup>
+const { locales, setLocale } = useI18n();
+</script>
 
+<template>
+  <div>
+    <button v-for="locale in locales" @click="setLocale(locale.code)">
+      {{ locale.name }}
+    </button>
+    <h1>{{ $t("welcome") }}</h1>
+  </div>
+  <hr />
+  <hr />
+
+  index page!!
+  <p>{{ $t("welcome") }}</p>
+  <div
+    class="bg-[url(/app-structure.png)] bg-no-repeat h-200 w-40 border-2 border-amber-500"
+  ></div>
   <div class="border-2 border-red-600 rounded-4">
     <h2>
       this image is from <code>public</code> address. is publicly available from

@@ -1,7 +1,7 @@
 <template>
   <NuxtRouteAnnouncer />
   <NuxtLayout>
-    <div>
+    <div class="bg-gray-400">
       <ShareHeader />
       <NuxtPage />
     </div>
