@@ -6,6 +6,7 @@ import { useLog } from "./../composables/my-log";
 
 definePageMeta({
   layout: "custom-layout",
+  middleware: "about-us-auth",
 });
 useLog("hamed!");
 
