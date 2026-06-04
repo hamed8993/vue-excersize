@@ -7,9 +7,13 @@ import { useLog } from "./../composables/my-log";
 definePageMeta({
   layout: "custom-layout",
 });
-
 useLog("hamed!");
+
+const { $sayHello } = useNuxtApp();
+
+$sayHello("hamed from about us page");
 </script>
+
 <template>
   <div>
     <h3>about us page</h3>
