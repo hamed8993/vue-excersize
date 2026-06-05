@@ -1,14 +1,23 @@
 <script setup>
-const { locales, setLocale } = useI18n();
+// const { locales, setLocale } = useI18n();
+// import {useCounterStore} from "./../stores/my-store";
+
+// const store = useCounterStore();
+
+// console.log("stroe>>", store)
 </script>
 
 <template>
+  <!-- <div class="border-magenta border-2 rounded-sm p-6">
+    <p>{{ store.counter }}</p>
+    <button @click="store.increment()">inc</button>
+  </div>
   <div>
     <button v-for="locale in locales" @click="setLocale(locale.code)">
       {{ locale.name }}
     </button>
     <h1>{{ $t("welcome") }}</h1>
-  </div>
+  </div> -->
   <hr />
   <hr />
 
